@@ -1,0 +1,21 @@
+.app{
+    border-radius: 8px;
+    width: 200px;
+    margin: 10px;
+    cursor: pointer;
+}
+
+.menu-link{
+    text-decoration: none;
+    font-size: 23px;
+}
+.my-nav a span{
+    font-size: 20px;
+    font-weight: 500;
+    font-family: Tahoma,sans-serif;
+}
+
+.cto{
+    height: 150px;
+    width: 150px;
+}
