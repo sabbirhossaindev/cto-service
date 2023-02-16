@@ -1,0 +1,17 @@
+.nav-ber{
+    width: 100%;
+}
+
+.menu-link{
+    text-decoration: none;
+}
+
+.my-nav a span{
+    font-size: 19px;
+    font-weight: 500;
+    font-family: Tahoma, sans-serif;
+}
+.cto{
+    height: 60px;
+    width: 100px;
+}
