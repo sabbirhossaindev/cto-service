@@ -4,7 +4,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
 import './Header.css';
-import cto from '../../../Images/cto.jpg';
+import cto from '../../../Images/cto-logo.png';
 
 
 const Header = () => {

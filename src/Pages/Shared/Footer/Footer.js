@@ -21,6 +21,12 @@ const Footer = () => {
 
                             <a className='menu-link' href="#about"><span className='mx-2 nav-link text-secondary'>About</span>
                             </a>
+
+                            <a className='menu-link' href="#service"><span className='mx-2 nav-link text-secondary'>Service</span>
+                            </a>
+
+                            <a className='menu-link' href="#inputField"><span className='mx-2 nav-link text-secondary'>InputField</span>
+                            </a>
                             
                             <a className='menu-link' href="#contact"><span className='mx-2 nav-link text-secondary'>Contact</span>          
                             </a>

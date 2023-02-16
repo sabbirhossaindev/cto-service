@@ -1,0 +1,40 @@
+/* contact section start  */
+.phone{
+    display: flex;
+    gap: 20px;
+}
+.email{
+    display: flex;
+    gap: 20px;
+}
+.location{
+    display: flex;
+    gap: 20px;
+}
+.social-link{
+    display: flex;
+    gap: 20px;
+}
+.social-link a{
+    text-decoration: none;
+    color: gray;
+}
+.contact-container{
+    background: white;
+    width: 100%;
+}
+
+hr:not([size]) {
+    height: 1px;
+}
+
+.hr1 {
+    border: 1px solid rgba(220, 61, 8, 0.993);
+    width: 70px;
+}
+.hr1 {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* contact section end  */
