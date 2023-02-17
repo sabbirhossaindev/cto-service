@@ -1,6 +1,6 @@
 import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
-import logo from '../../../Images/cto.jpg';
+import pay from '../../../Images/pay.png';
 import footer from '../../../Images/footer.png';
 import './Footer.css';
 
@@ -48,12 +48,12 @@ const Footer = () => {
                             <h4 className='mx-auto text-center fs-3'>We Are Using</h4>
                             <hr className='hr2'/>
                             <div className='mx-auto text-center'>
-                                <a className='menu-link text-secondary' href="#"><h3 className='fs-4'>JavasScript</h3></a>
+                                <a className='menu-link text-secondary' href="#"><h3 className='fs-4'>Html, Css</h3></a>
                                 <a className='menu-link text-secondary' href="#"><h3 className='fs-4'>UI Design</h3></a>
                                 <a className='menu-link text-secondary' href="#"><h3 className='fs-4'>React</h3></a>
-                                <a className='menu-link text-secondary' href="#"><h3 className='fs-4'>Node JS</h3></a>
+                                <a className='menu-link text-secondary' href="#"><h3 className='fs-4'>vercel</h3></a>
+                                <a className='menu-link text-secondary' href="#"><h3 className='fs-4'>javaScript</h3></a>
                                 <a className='menu-link text-secondary' href="#"><h3 className='fs-4'>MongoDB</h3></a>
-                                <a className='menu-link text-secondary' href="#"><h3 className='fs-4'>Express</h3></a>
                             </div>
                         </div>
                     </Col>
@@ -61,7 +61,7 @@ const Footer = () => {
                     <Col md="3" className='mx-auto text-center'>
                         <h2 className='mx-auto text-center'>CTO Service</h2>
                         <hr className='hr2'/>
-                        <img src={logo} alt="aws" className='img-fluid rounded' data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000"/>
+                        <img src={pay} alt="aws" className='img-fluid rounded' data-aos="flip-right" data-aos-easing="ease-out-cubic" data-aos-duration="2000"/>
                     </Col>
                 </Row>
                 <div className='text-light text-center mt-5'>
