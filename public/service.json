@@ -1,0 +1,38 @@
+[
+    {
+        "id":"1", 
+        "img":"https://i.ibb.co/3490XFQ/1.jpg",
+        "details": "IT Roadmap for Transformation in New Castle County, DE",
+        "links": "https://www.gartner.com/en/information-technology/customer-success-stories/it-roadmap-for-transformation-in-new-castle-county-de"
+    },
+    {
+        "id":"2",
+        "img":"https://i.ibb.co/86Z1Zt9/2.png",
+        "details": "3 Key Goals for Software Engineering Leaders to Sustain Digital Momentum",
+        "links": "https://www.gartner.com/en/publications/sustain-your-digital-momentum-3-goals-for-software-engineering-leaders"
+    },
+    {
+        "id":"3",
+        "img":"https://i.ibb.co/F8BnXyz/3.png",
+        "details": "Pssst.. are you thinking about your conferences yet?Transformation in New Castle County, DE",
+        "links": "https://blogs.gartner.com/chris-saunderson/pssst-are-you-thinking-about-your-conferences-yet/?_ga=2.193578409.548964670.1676575393-67876403.1676575393"
+    },
+    {
+        "id":"4",
+        "img":"https://i.ibb.co/KLcp1b6/4.jpg",
+        "details": "Top Priorities, Technologies and Challenges in Banking and Investment Services for 2023",
+        "links": "https://www.gartner.com/en/information-technology/insights/cio-agenda/cio-agenda-banking-and-investment"
+    },
+    {
+        "id":"5",
+        "img":"https://i.ibb.co/y8wkWby/5.jpg",
+        "details": "The Future of Cloud Computing in 2027: From Technology to Business Innovation",
+        "links": "https://www.gartner.com/en/doc/768816-the-future-of-cloud-computing-in-2027-from-technology-to-business-innovation"
+    },
+    {
+        "id":"6",
+        "img":"https://i.ibb.co/86Z1Zt9/2.png",
+        "details": "CISO Foundations: Build a Culture of Security Consciousness — Introducing the Gartner PIPE Framework",
+        "links": "https://www.gartner.com/en/doc/773138-ciso-foundations-build-a-culture-of-security-consciousness-introducing-the-gartner-pipe-framework"
+    }
+]
