@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import './InputField.css';
 import fream from '../../../Images/7.png';
@@ -7,19 +7,21 @@ import InputGroup from 'react-bootstrap/InputGroup';
 import { toast } from 'react-toastify';
 
 const InputField = () => {
+    const [terms, setTerms] = useState(false)
+
     const addSubmit = event => {
         event.preventDefault()
         const form = event.target;
-        const name = form.name.value;
-        const email = form.email.value;
-        const subject = form.subject.value;
-        const message = form.message.value;
+        const inputName = form.inputName.value;
+        const name = form.selectArea.value;
+        const remember = form.remember.value;
         const addInfo = {
-            name, email, subject, message
-        }
-        // console.log('addInfo', addInfo);
+            inputName, remember, name
 
-        fetch(`https://cto-service-server.vercel.app/submit`, {
+        }
+        console.log('addInfo', addInfo);
+
+        fetch(`https://cto-service-server-sabbirvai.vercel.app/inputField`, {
         method: 'POST',
         headers: {
             'Content-Type' : 'application/json'
@@ -29,7 +31,7 @@ const InputField = () => {
         .then(res => res.json())
         .then(data => {
             // console.log(data);
-            toast.success('Message sand.');
+            toast.success('Message send.');
             form.reset('');
         })
     }
@@ -47,17 +49,21 @@ const InputField = () => {
                         <Col md='12'>
                             <h3 className='text-center'>Please enter your name and pick the Sectors you are currently involved in.</h3>
                             <br />
-                            <h4 className='text-center'>Name: <input className='p-1 rounded input-name' type="text" placeholder='  enter your name' name='name' required /></h4>
+                            <h4 className='text-center'>Name: <input className='p-1 rounded input-name' type="text" placeholder='  enter your name' name='inputName' required /></h4>
                             <Col md='12'>
-                                <b className='text-center'>Sectors<Form.Select aria-label="Default select example">
+                                <b className='text-center'>Sectors<Form.Select name='selectArea' aria-label="Default select example">
                                 <option>Select One Menu</option>
-                                <option value="1">Manufacturing</option>
-                                <option value="2">Plastic & Rubber</option>
-                                <option value="3">Printing</option>
-                                <option value="3">Other</option>
-                                <option value="3">Service</option>
-                                <option value="3">Tourism</option>
+                                <option value="Manufacturing">Manufacturing</option>
+                                <option value="Plastic & Rubber">Plastic & Rubber</option>
+                                <option value="Printing">Printing</option>
+                                <option value="Other">Other</option>
+                                <option value="Service">Service</option>
+                                <option value="Tourism">Tourism</option>
                                 </Form.Select>
+                                    {/* <select name='selectArea'>
+                                    <option value="Manufacturing">Manufacturing</option>
+                                    </select> */}
+                                    
                                 </b>
                             </Col>
                             <br />
@@ -65,16 +71,17 @@ const InputField = () => {
                                     {['checkbox'].map((type) => (
                                     <div key={`inline-${type}`} className="mb-3">
                                     <Form.Check
+                                        onClick={() => setTerms(!terms)}
                                         inline
                                         label="Agree to terms"
-                                        name="group1"
+                                        name="remember"
                                         type={type}
                                         id={`inline-${type}-1`}
                                     />
                                     </div>
                                 ))}
                             </InputGroup>
-                            <button type="submit" className='my-3 btn btn-primary'>Save</button>
+                            <button disabled={!terms} type="submit" className='my-3 btn btn-primary'>Save</button>
                         </Col>
                     </Form>
                 </Row>

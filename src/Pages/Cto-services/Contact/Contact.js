@@ -19,7 +19,7 @@ const Contact = () => {
         }
         console.log('addInfo', addInfo);
 
-        fetch(`https://cto-service-server.vercel.app/submit`, {
+        fetch(`https://cto-service-server-sabbirvai.vercel.app/submit`, {
         method: 'POST',
         headers: {
             'Content-Type' : 'application/json'
@@ -29,7 +29,7 @@ const Contact = () => {
         .then(res => res.json())
         .then(data => {
             // console.log(data);
-            toast.success('Message sand Thank you !🥰');
+            toast.success('Message send Thank you !🥰');
             form.reset('');
         })
     }
