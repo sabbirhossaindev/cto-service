@@ -2,10 +2,37 @@ import React from 'react';
 import { Col, Container, Row } from 'react-bootstrap';
 import Form from 'react-bootstrap/Form';
 import { BsFillTelephoneInboundFill, BsFillEnvelopeOpenFill, BsCursorFill, BsLinkedin, BsChatDotsFill, BsGithub, BsGlobe } from "react-icons/bs";
+import { toast } from 'react-toastify';
 import './Contact.css';
 
 
 const Contact = () => {
+    const addSubmit = event => {
+        event.preventDefault()
+        const form = event.target;
+        const name = form.name.value;
+        const email = form.email.value;
+        const subject = form.subject.value;
+        const message = form.message.value;
+        const addInfo = {
+            name, email, subject, message
+        }
+        console.log('addInfo', addInfo);
+
+        fetch(`https://cto-service-server.vercel.app/submit`, {
+        method: 'POST',
+        headers: {
+            'Content-Type' : 'application/json'
+        },
+        body: JSON.stringify(addInfo)
+    })
+        .then(res => res.json())
+        .then(data => {
+            // console.log(data);
+            toast.success('Message sand Thank you !🥰');
+            form.reset('');
+        })
+    }
 
     return (
         <div className='p-1 contact-container' id='contact'>
@@ -55,7 +82,7 @@ const Contact = () => {
                     </Col>
 
                     <Col md='7' className='mt-2'>
-                    <Form> 
+                    <Form onSubmit={addSubmit}> 
                         <Row>
                             <Col md="6">
                                 <Form.Group className="mb-3" controlId="formBasicEmail">
