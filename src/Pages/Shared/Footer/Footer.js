@@ -39,7 +39,7 @@ const Footer = () => {
                         <div className='mx-auto text-center'>
                             <p className='fs-5 text-secondary'>+8801888559287</p>
                             <p className='fs-5 text-secondary'>+8801719228487</p>
-                            <p className='fs-5 text-secondary'>kp-high-school@gmail.com</p>
+                            <p className='fs-5 text-secondary'>mdsabbir477470@gmail.com</p>
                         </div>
                     </Col>
 
@@ -48,12 +48,12 @@ const Footer = () => {
                             <h4 className='mx-auto text-center fs-3'>We Are Using</h4>
                             <hr className='hr2'/>
                             <div className='mx-auto text-center'>
-                                <a className='menu-link text-secondary' href="https://dev-sabbir.web.app"><h3 className='fs-4'>JavasScript</h3></a>
-                                <a className='menu-link text-secondary' href="https://dev-sabbir.web.app"><h3 className='fs-4'>UI Design</h3></a>
-                                <a className='menu-link text-secondary' href="https://dev-sabbir.web.app"><h3 className='fs-4'>React</h3></a>
-                                <a className='menu-link text-secondary' href="https://dev-sabbir.web.app"><h3 className='fs-4'>Node JS</h3></a>
-                                <a className='menu-link text-secondary' href="https://dev-sabbir.web.app"><h3 className='fs-4'>MongoDB</h3></a>
-                                <a className='menu-link text-secondary' href="https://dev-sabbir.web.app"><h3 className='fs-4'>Express</h3></a>
+                                <a className='menu-link text-secondary' href="#"><h3 className='fs-4'>JavasScript</h3></a>
+                                <a className='menu-link text-secondary' href="#"><h3 className='fs-4'>UI Design</h3></a>
+                                <a className='menu-link text-secondary' href="#"><h3 className='fs-4'>React</h3></a>
+                                <a className='menu-link text-secondary' href="#"><h3 className='fs-4'>Node JS</h3></a>
+                                <a className='menu-link text-secondary' href="#"><h3 className='fs-4'>MongoDB</h3></a>
+                                <a className='menu-link text-secondary' href="#"><h3 className='fs-4'>Express</h3></a>
                             </div>
                         </div>
                     </Col>
